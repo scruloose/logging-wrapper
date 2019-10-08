@@ -11,4 +11,8 @@ As-is, the script will check for running instances of the target program and onl
 
 For prolonged debugging of a graphical program, (eg trying to track down an infrequent fatal crash bug) you can create a menu item in your desktop environment of choice by duplicating the target program's entry and prepending `logging-wrapper.sh` to the command in the duplicate entry (and name it `<program> (logging)` or similar). Any options and arguments received by the script will be passed on as-is to the program when it's launched. Setting the logging-wrapper entry as default action for any MIME types associated with the target program should work too.
 
+logging-wrapper does not do any rotation of the captured log files, deletion of old log files, or anything like that. Managing the files generated is left entirely up to the user!
+
 Happy hunting!
+
+(No warranty, express or implied; use at own risk; you know the drill.)

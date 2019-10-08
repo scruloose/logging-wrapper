@@ -3,7 +3,7 @@ A wrapper script to launch a program and capture debugging info to a log file. T
 
 To use logging-wrapper, put it in your $PATH somewhere (I like /usr/local/bin), remember to set execute permission, and type `logging-wrapper.sh <program> [options and arguments for <program>]`
 
-**NOTE:** logging-wrapper will try to log the last 20 entries from `/var/log/messages` when the target program exits, to get a glimpse of what the system is up to at the moment of a crash. This will only succeed if the user running the script has read access to that file. On Debian, the easy way to accomplisth that is to add the user to group 'adm'.
+**NOTE:** logging-wrapper will try to log the last 20 entries from `/var/log/messages` when the target program exits, to get a glimpse of what the system is up to at the moment of a crash. This will only succeed if the user running the script has read access to that file. On Debian, the easy way to accomplish that is to add the user to group 'adm'.
 
 When launched in a terminal window, logging-wrapper will print messages about its own activity *and* a copy of everything it captures to that window.
 
